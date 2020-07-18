@@ -29,7 +29,7 @@ else
 dosbox_LDFLAGS+=--memory-init-file 0
 endif
 if WEBASSEMBLY
-dosbox_LDFLAGS+=-s WASM=1 -s 'BINARYEN_TRAP_MODE="clamp"'
+dosbox_LDFLAGS+=-s WASM=1 -s 'BINARYEN_TRAP_MODE="clamp"' -s ASSERTIONS=2 -s DEMANGLE_SUPPORT=1 -g3 --shell-file ./shell.html
 else
 dosbox_LDFLAGS+=-s WASM=0
 endif
