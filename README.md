@@ -1,6 +1,20 @@
 DOSBox ported to Emscripten
 ===========================
 
+Radcade notes
+
+need to have emscripten sdk installed `emsdk` this is like the node version manager and need to install and activate `1.39.5-fastcomp` emscripten
+
+To build this...
+
+``` bash
+./autogen.sh
+emconfigure ./configure --enable-wasm
+make
+```
+
+
+
 About
 -----
 
